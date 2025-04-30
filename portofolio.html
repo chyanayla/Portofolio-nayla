@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portofolio Cahaya</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f0e9;
+      color: #222;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: #fff;
+      padding: 20px 40px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: flex-end;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+      padding: 8px 14px;
+      border-radius: 8px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    nav ul li a:hover {
+      background-color: #f2e1c1;
+      transform: scale(1.05);
+    }
+
+    nav ul li a.active {
+      background-color: #f2e1c1;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 60px 20px;
+    }
+
+    .profile {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+      flex-wrap: wrap;
+      background-color: #fff6e9;
+      padding: 40px 50px;
+      border-radius: 24px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .profile:hover {
+      transform: scale(1.02);
+    }
+
+    .photo-container {
+      width: 200px;
+      height: 300px;
+      border-radius: 100px;
+      overflow: hidden;
+      background-color: #eee;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: transform 0.3s ease;
+    }
+
+    .photo-container:hover {
+      transform: scale(1.1);
+    }
+
+    .photo-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .bio h1 {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .bio p {
+      max-width: 500px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    footer {
+      background-color: #fff;
+      border-top: 1px solid #ccc;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: flex-start;
+    }
+
+    .footer-left {
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .social {
+      flex: 1;
+      text-align: center;
+    }
+
+    .social p {
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 10px;
+      flex-wrap: wrap;
+    }
+
+    .social-icons a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      color: #000;
+      font-size: 12px;
+      transition: color 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      color: #0077cc;
+    }
+
+    .social-icons img {
+      width: 24px;
+      height: 24px;
+      margin-bottom: 4px;
+      transition: transform 0.3s ease;
+    }
+
+    .social-icons img:hover {
+      transform: scale(1.2);
+    }
+
+    .kontak {
+      font-size: 13px;
+      text-align: right;
+    }
+
+    .kontak p {
+      margin: 3px 0;
+      font-weight: bold;
+    }
+
+    @media (max-width: 600px) {
+      .profile {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      footer {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+      }
+
+      .kontak {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .social-icons {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="portofolio.html" class="active">Tentang saya</a></li>
+        <li><a href="Pengalaman.html">Pengalaman</a></li>
+        <li><a href="skil.html">Skill</a></li>
+        <li><a href="sertifikat.html">Sertifikat</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="profile">
+      <div class="photo-container">
+        <img src="image/WhatsApp Image 2025-04-29 at 07.18.04-removebg-preview.jpg" alt="Cahaya Nayla" />
+      </div>
+      <div class="bio">
+        <h1>Cahaya Naylatul Afwa</h1>
+        <p>
+          Saya siswi Kelas 11 SMKN 1 Nglegok jurusan Teknik Komputer dan Jaringan (TKJ) dengan minat dalam jaringan. 
+          Saya senang belajar hal baru dan bekerja dalam tim maupun mandiri, serta memiliki pengalaman dalam mengerjakan project sekolah.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-left">
+      Cahaya Nayla
+    </div>
+  
+    <div class="social">
+      <p>Sosial Media</p>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/chyatekasa_/profilecard/?igsh=MWlmeDBuYXVqMjNnag==" target="_blank">
+          <img src="image/ig-removebg-preview.png" alt="Instagram" />
+          <span>Instagram</span>
+        </a>
+
+        <a href="https://youtube.com/@cahayanayla7741?si=vY1dPSL40zw_sPoU" target="_blank">
+          <img src="image/yt-removebg-preview.png" alt="YouTube" />
+          <span>YouTube</span>
+        </a>
+
+        <a href="https://www.blogger.com/blog/posts/2345216836444525701?bpli=1&pli=1" target="_blank">
+          <img src="image/bg-removebg-preview.png" alt="Blog" />
+          <span>Blog</span>
+        </a>
+      </div>
+    </div>
+  
+    <div class="kontak">
+      <p>Kontak</p>
+      <p>Email: cahayanaylatulafwa28@gmail.com</p>
+      <p>No HP: 0858-5679-148</p>
+    </div>
+  </footer>
+
+</body>
+</html>

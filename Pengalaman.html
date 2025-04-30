@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pengalaman - Cahaya Nayla</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f0e9;
+      color: #222;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: #fff;
+      padding: 20px 40px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: flex-end;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+      padding: 8px 14px;
+      border-radius: 8px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    nav ul li a:hover {
+      background-color: #f2e1c1;
+      transform: scale(1.05);
+    }
+
+    nav ul li a.active {
+      background-color: #f2e1c1;
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+      flex: 1;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 40px;
+    }
+
+    .accordion {
+      cursor: pointer;
+      padding: 15px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+    }
+
+    .accordion::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50px;
+      width: 60%;
+      border-bottom: 2px dashed #333;
+    }
+
+    .accordion-icon {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .accordion i {
+      font-size: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .accordion.open i {
+      transform: rotate(180deg);
+    }
+
+    .content {
+      display: none;
+      padding: 10px 0 20px 40px;
+      font-size: 14px;
+      color: #444;
+    }
+
+    footer {
+      background-color: #fff;
+      border-top: 1px solid #ccc;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      font-size: 13px;
+    }
+
+    .footer-left {
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .social p {
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 20px;
+      margin-top: 10px;
+      flex-wrap: wrap;
+    }
+
+    .social-icons a {
+      text-decoration: none;
+      color: #000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 12px;
+      transition: color 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      color: #0077cc;
+    }
+
+    .social-icons img {
+      width: 24px;
+      height: 24px;
+      margin-bottom: 4px;
+      transition: transform 0.3s ease;
+    }
+
+    .social-icons img:hover {
+      transform: scale(1.2);
+    }
+
+    .kontak {
+      text-align: right;
+    }
+
+    .kontak p {
+      margin: 3px 0;
+      font-weight: bold;
+    }
+
+    @media (max-width: 600px) {
+      footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .kontak {
+        margin-top: 20px;
+        text-align: center;
+      }
+
+      nav ul {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="portofolio.html">Tentang saya</a></li>
+        <li><a href="Pengalaman.html" class="active">Pengalaman</a></li>
+        <li><a href="skil.html">Skill</a></li>
+        <li><a href="sertifikat.html">Sertifikat</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <h1>PENGALAMAN</h1>
+
+    <div class="accordion" onclick="toggleAccordion(this)">
+      <div class="accordion-icon">
+        <img src="image/pendidikan.png" alt="Pendidikan" width="24" />
+        <strong>Pendidikan</strong>
+      </div>
+      <i>⌄</i>
+    </div>
+    <div class="content">
+      <p>Saya menempuh pendidikan di SD NEGERI TAMBAKAN 1 (2014–2020)</p>
+      <ul>
+        <li>Aktif mengikuti lomba akademik & non-akademik</li>
+        <li>Ekskul tari, pernah mengikuti lomba tari tingkat kecamatan</li>
+      </ul>
+      <p>SMP NEGERI 2 GANDUSARI (2020–2023)</p>
+      <ul>
+        <li>Aktif dalam kegiatan sekolah & ekskul pencak silat</li>
+        <li>Ikut serta dalam Smanega Cup 2023</li>
+      </ul>
+      <p>SMKN 1 Nglegok – TKJ (2023–sekarang)</p>
+      <ul>
+        <li>Aktif dalam event sekolah, khususnya jurusan</li>
+        <li>Ikut berbagai kegiatan materi TKJ dan praktik</li>
+      </ul>
+    </div>
+
+    <div class="accordion" onclick="toggleAccordion(this)">
+      <div class="accordion-icon">
+        <img src="image/non formal.png" alt="Non Formal" width="24" />
+        <strong>Pendidikan Non Formal</strong>
+      </div>
+      <i>⌄</i>
+    </div>
+    <div class="content">
+      <p>Pelatihan DIKLATAMA IPNU IPPNU Kec. Gandusari:</p>
+      <ul>
+        <li>Mengenal organisasi pelajar (IPNU IPPNU)</li>
+        <li>Pelatihan tentang Aswaja, kewarganegaraan, bela negara</li>
+        <li>Pembentukan karakter dan kepemimpinan</li>
+      </ul>
+    </div>
+
+    <div class="accordion" onclick="toggleAccordion(this)">
+      <div class="accordion-icon">
+        <img src="image/organisasi.png" alt="Organisasi" width="24" />
+        <strong>Organisasi</strong>
+      </div>
+      <i>⌄</i>
+    </div>
+    <div class="content">
+      <ul>
+        <li>IPNU IPPNU</li>
+        <li>Korp Pelajar Putri</li>
+        <li>Persaudaraan Setia Hati Terate</li>
+      </ul>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-left">Cahaya Nayla</div>
+
+    <div class="social">
+      <p>Sosial Media</p>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/chyatekasa_/" target="_blank">
+          <img src="image/ig-removebg-preview.png" alt="Instagram" />
+          <span>Instagram</span>
+        </a>
+        <a href="https://youtube.com/@cahayanayla7741" target="_blank">
+          <img src="image/yt-removebg-preview.png" alt="YouTube" />
+          <span>YouTube</span>
+        </a>
+        <a href="https://www.blogger.com/" target="_blank">
+          <img src="image/bg-removebg-preview.png" alt="Blog" />
+          <span>Blog</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="kontak">
+      <p>Kontak</p>
+      <p>Email: cahayanaylatulafwa28@gmail.com</p>
+      <p>No HP: 0858-5679-148</p>
+    </div>
+  </footer>
+
+  <!-- SCRIPT -->
+  <script>
+    function toggleAccordion(el) {
+      el.classList.toggle("open");
+      const content = el.nextElementSibling;
+      content.style.display = content.style.display === "block" ? "none" : "block";
+    }
+  </script>
+
+</body>
+</html>
