@@ -48,6 +48,40 @@
     }
 
     /* Gallery */
+    .certificate-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 40px;
+  justify-items: center;
+  background-color: #fdf6ed;
+}
+
+.certificate-grid img {
+  width: 100%;
+  max-width: 300px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.certificate-grid img:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 900px) {
+  .certificate-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .certificate-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
     .gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -156,14 +190,16 @@
   </header>
 
   <!-- Galeri Sertifikat -->
-  <section class="gallery">
+<section class="gallery">
+  <div class="certificate-grid">
     <img src="image/st 1.jpeg" alt="Sertifikat Mikrotik" />
     <img src="image/st2.jpeg" alt="Sertifikat Red Hat 1" />
     <img src="image/st3.jpeg" alt="Sertifikat Red Hat 2" />
     <img src="image/redhat ss.png" alt="Sertifikat Linux" />
     <img src="image/redhat ss2.png" alt="Sertifikat Linux 2" />
     <img src="image/javacrip.png" alt="Sertifikat JavaScript" />
-  </section>
+  </div>
+</section>
 
   <!-- Footer -->
   <footer>
